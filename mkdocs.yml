@@ -11,8 +11,18 @@ copyright: "Copyright &copy; 2000-2022 Gilles Lantéri - Histoire et généalogi
 theme:
   name: "material"
   palette:
-    primary: yellow
-    accent: pink
+    - scheme: default
+      primary: yellow
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: green
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   icon:
     logo: material/family-tree
   features:
