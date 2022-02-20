@@ -5,7 +5,7 @@ site_author: "Gilles LANTERI"
 site_url: "https://gilfr.github.io/genea/"
 
 # Copyright
-copyright: "Copyright &copy; 2000-2022 Gilles Lantéri"
+copyright: "Copyright &copy; 2000-2022 Gilles Lantéri - Histoire et généalogie des Lanteri. Tous droits réservés. Reproduction interdite sans autorisation."
 
 # Configuration
 theme:
@@ -31,29 +31,36 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
   - javascripts/tables.js
 
+# Plug-ins
+plugins:
+  - tags:
+      tags_file: tags.md
+
 # Extensions
 markdown_extensions:
   - abbr
   - admonition
   - attr_list
+  - md_in_html
+  - pymdownx.critic
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
       options:
         custom_icons:
           - overrides/.icons
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
   - pymdownx.superfences
-# #   - codehilite:
+  #   - codehilite:
 # #       guess_lang: false
 # #   - footnotes
 # #   - meta
 # #   - pymdownx.betterem:
 # #       smart_enable: all
 # #   - pymdownx.caret
-# #   - pymdownx.critic
 # #   - pymdownx.details
 # #   # - pymdownx.emoji.emojione # Payant
-# #   - pymdownx.inlinehilite
 # #   - pymdownx.magiclink
 # #   - pymdownx.mark
 # #   - pymdownx.progressbar
